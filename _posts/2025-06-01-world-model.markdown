@@ -4,7 +4,7 @@ title: "Physics-grounded World Model of Deformable Objects"
 date: 2025-06-01 00:00:00 +00:00
 categories: project
 role: "Research intern"
-organization: "A4X Rightly Robotics, Hangzhou, China"
+organization: "<a href='https://www.a4x.io/'>A4X Rightly Robotics</a>, Hangzhou, China"
 period: "2025 –"
 ---
 <ul>
