@@ -5,6 +5,6 @@ date: 2026-03-05 00:00:00 +00:00
 categories: research
 authors: "<strong>C. Li</strong>, J. Gu, J. Chen, et al."
 venue: "arXiv"
-note: "In submission"
+# note: "In submission"
 image: /images/gs-sequence.gif
 ---

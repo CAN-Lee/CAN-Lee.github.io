@@ -5,7 +5,7 @@ date: 2026-03-03 00:00:00 +00:00
 categories: research
 authors: "J. Xiong, <strong>C. Li</strong>, J. Shen, et al."
 venue: "arXiv"
-note: "In submission"
+# note: "In submission"
 image: /images/ftsplat_0.png
 image2: /images/ftsplat.png
 ---
