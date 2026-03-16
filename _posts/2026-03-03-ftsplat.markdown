@@ -1,0 +1,9 @@
+---
+layout: post
+title: "FTSplat: Feed-forward Triangle Splatting Network"
+date: 2026-03-03 00:00:00 +00:00
+categories: research
+authors: "J. Xiong, <strong>C. Li</strong>, J. Shen, et al."
+venue: "arXiv"
+note: "In submission"
+---

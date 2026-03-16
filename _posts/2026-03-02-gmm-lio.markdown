@@ -1,0 +1,9 @@
+---
+layout: post
+title: "GMM-LIO: Adaptive and Robust LiDAR-Inertial Odometry with Gaussian Mixture Model Voxel Map"
+date: 2026-03-02 00:00:00 +00:00
+categories: research
+authors: "Z. Deng, <strong>C. Li</strong>, W. Lin, et al."
+venue: "IEEE ICRA"
+note: "Accepted"
+---
