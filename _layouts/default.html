@@ -48,7 +48,7 @@
               <p>
                 <strong>World Model</strong>: visual reconstruction, simulation, and generation of deformable objects
                 <br>
-                <strong>Robotics</strong>: visual-tactile manipulation of deformable objects, SLAM(early)
+                <strong>Robotics</strong>: visual-tactile manipulation of deformable objects
               </p>
             </td>
           </tr>
@@ -66,10 +66,24 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              {{post.authors}}.
-              <strong>{{post.title}}</strong>.
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}.
+            {% unless post.noimage %}
+            <td style="padding:1% 2.5%;width:50%;vertical-align:middle;min-width:250px;text-align:center">
+              {% if post.image2 %}
+              <div style="display:flex; gap:6px; justify-content:center; align-items:center;">
+                <img src="{{post.image}}" alt="project image" style="height:150px; object-fit:contain;" />
+                <img src="{{post.image2}}" alt="project image" style="height:150px; object-fit:contain;" />
+              </div>
+              {% elsif post.image %}
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%; max-height:150px; object-fit:contain; display:block; margin:0 auto;" />
+              {% endif %}
+            </td>
+            {% endunless %}
+            <td {% if post.noimage %}colspan="2"{% endif %} style="padding:1% 2.5%;{% unless post.noimage %}width:50%;{% endunless %}vertical-align:middle">
+              <strong>{{post.title}}</strong>
+              <br>
+              {{post.authors}}
+              <br>
+              <em>{{post.venue}}</em>, {% if post.year %}{{ post.year }}{% else %}{{ post.date | date: "%Y" }}{% endif %}.
               {% if post.note %}({{post.note}}){% endif %}
               {% if post.arxiv %}
               [<a href="{{post.arxiv}}">arXiv</a>]
